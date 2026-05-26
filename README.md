@@ -1,7 +1,7 @@
 # PlaywrightAutomationFramework
 End to End Playwright Automation Framework with Agentic capabilities to help generate and heal failed test cases.
 
-<img width="500" height="500" alt="playwright_bdd_framework_architecture" src="https://github.com/user-attachments/assets/8d92abfd-7bae-4ac9-9bb0-a88bfacca6fe" />
+<img width="700" height="700" alt="playwright_bdd_framework_architecture" src="https://github.com/user-attachments/assets/8d92abfd-7bae-4ac9-9bb0-a88bfacca6fe" />
 
 ## 📂 Project Structure
 
