@@ -1,0 +1,12 @@
+{
+  "baseUrl": "https://qa.example.com",
+  "apiUrl": "https://api.qa.example.com",
+  "users": {
+    "standard": { "username": "std_user", "password": "ChangeMe!" },
+    "admin":    { "username": "admin_user", "password": "ChangeMe!" }
+  },
+  "timeouts": {
+    "default": 10000,
+    "long": 30000
+  }
+}

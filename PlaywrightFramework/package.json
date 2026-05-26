@@ -1,0 +1,36 @@
+{
+  "name": "playwright-cucumber-framework",
+  "version": "1.0.0",
+  "description": "Modular Playwright + Cucumber BDD framework with Playwright MCP for test generation and self-healing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config config/cucumber.js",
+    "test:smoke": "cucumber-js --config config/cucumber.js --tags @smoke",
+    "test:regression": "cucumber-js --config config/cucumber.js --tags @regression",
+    "test:debug": "cross-env DEBUG=pw:api cucumber-js --config config/cucumber.js",
+    "test:headed": "cross-env HEADED=true cucumber-js --config config/cucumber.js",
+    "report": "node scripts/generate-report.js",
+    "mcp:generate": "node src/mcp/testGenerator.js",
+    "mcp:heal": "node src/mcp/selfHealer.js",
+    "lint": "eslint src features"
+  },
+  "keywords": ["playwright", "cucumber", "bdd", "mcp", "self-healing"],
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@playwright/test": "^1.48.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.13.0",
+    "multiple-cucumber-html-reporter": "^3.8.0",
+    "winston": "^3.15.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@playwright/mcp": "^0.0.10"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
